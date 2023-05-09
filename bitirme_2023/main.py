@@ -46,7 +46,7 @@ def main():
         
         # play sound if alarm is on
         if play_alarm and frame_count % 15 == 0:
-            playsound('wake_up.mp3', block=False)
+            playsound('wake_up.mp3', block=True)
 
 
         cv2.imshow("frame", processed_frame)
